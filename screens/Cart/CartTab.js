@@ -1,12 +1,19 @@
 import React from 'react';
 import {
     View,
-    Text
+    Text,
 } from 'react-native';
 
 const CartTab = () => {
     return (
-        <View>
+        <View
+            style={{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}
+        >
+            <Text>Car</Text>
         </View>
     )
 }
