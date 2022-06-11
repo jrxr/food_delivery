@@ -8,7 +8,7 @@ import Animated from "react-native-reanimated";
 import { connect } from "react-redux";
 import { setSelectedTab } from "../stores/tab/tabActions";
 
-import { MainLayout } from "../screens";
+import  OnBoarding  from "../screens/OnBoarding/OnBoarding";
 import {
   COLORS,
   FONTS,
@@ -136,7 +136,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.home}
             onPress={() => {
               setSelectedTab(constants.screens.home);
-              navigation.navigate("MainLayout");
+              navigation.navigate("OnBoarding");
             }}
           />
           <CustomDrawerItem
@@ -149,7 +149,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.notification}
             onPress={() => {
               setSelectedTab(constants.screens.home);
-              navigation.navigate("MainLayout");
+              navigation.navigate("OnBoarding");
             }}
           />
           <CustomDrawerItem
@@ -158,7 +158,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
             isFocused={selectedTab === constants.screens.favourite}
             onPress={() => {
               setSelectedTab(constants.screens.home);
-              navigation.navigate("MainLayout");
+              navigation.navigate("OnBoarding");
             }}
           />
 
@@ -224,7 +224,7 @@ const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
         sceneContainerStyle={{
           backgroundColor: "transparent",
         }}
-        initialRouteName="MainLayout"
+        initialRouteName="OnBoarding"
         drawerContent={(props) => {
           setTimeout(() => {
             setProgress(props.progress);
@@ -239,9 +239,9 @@ const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
           );
         }}
       >
-        <Drawer.Screen name="MainLayout">
+        <Drawer.Screen name="OnBoarding">
           {(props) => (
-            <MainLayout {...props} drawerAnimationStyle={animatedStyle} />
+            <OnBoarding {...props} drawerAnimationStyle={animatedStyle} />
           )}
         </Drawer.Screen>
       </Drawer.Navigator>

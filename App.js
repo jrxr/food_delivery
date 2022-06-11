@@ -21,9 +21,9 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}
-          initialRouteName={"Home"}
+          initialRouteName={"Onboarding"}
         >
-          <Stack.Screen name="Home" component={CustomDrawer} />
+          <Stack.Screen name="Onboarding" component={CustomDrawer} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

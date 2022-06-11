@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native";
 
-import { FilterModal } from "./FilterModal";
+import { FilterModal } from "../";
 import { HorizontalFoodCard, VerticalFoodCard } from "../../components";
 import { FONTS, SIZES, COLORS, icons, dummyData } from "../../constants";
 

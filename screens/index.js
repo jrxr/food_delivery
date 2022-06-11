@@ -1,3 +1,4 @@
+import OnBoarding from "./OnBoarding/OnBoarding";
 import MainLayout from "./MainLayout";
 
 // Home
@@ -16,7 +17,18 @@ import Favourite from "./Favourite/Favourite";
 // Notification
 import Notification from "./Notification/Notification";
 
+// Authentication
+import SignIn from "./Authentication/SignIn";
+import SignUp from "./Authentication/SignUp";
+import Otp from "./Authentication/Otp";
+import ForgotPassword from "./Authentication/ForgotPassword";
+
 export {
+  OnBoarding,
+  SignIn,
+  SignUp,
+  Otp,
+  ForgotPassword,
   MainLayout,
   Home,
   FilterModal,

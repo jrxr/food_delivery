@@ -5,6 +5,7 @@ import IconButton from "./IconButton";
 import TwoPointSlider from "./TwoPointSlider";
 import TextButton from "./TextButton";
 import TextIconButton from "./TextIconButton";
+import TextButtonBoarding from "./TextButtonBoarding";
 
 export  {
   Header,
@@ -14,4 +15,5 @@ export  {
   TwoPointSlider,
   TextButton,
   TextIconButton,
+  TextButtonBoarding,
 }
