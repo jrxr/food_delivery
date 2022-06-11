@@ -6,6 +6,9 @@ import TwoPointSlider from "./TwoPointSlider";
 import TextButton from "./TextButton";
 import TextIconButton from "./TextIconButton";
 import TextButtonBoarding from "./TextButtonBoarding";
+import FormInput from "./FormInput";
+import CustomSwitch from "./CustomSwitch";
+import TextIconButtonSignIn from "./TextIconButtonSignIn";
 
 export  {
   Header,
@@ -16,4 +19,7 @@ export  {
   TextButton,
   TextIconButton,
   TextButtonBoarding,
+  FormInput,
+  CustomSwitch,
+  TextIconButtonSignIn,
 }

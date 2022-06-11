@@ -18,6 +18,7 @@ import Favourite from "./Favourite/Favourite";
 import Notification from "./Notification/Notification";
 
 // Authentication
+import AuthLayout from "./Authentication/AuthLayout";
 import SignIn from "./Authentication/SignIn";
 import SignUp from "./Authentication/SignUp";
 import Otp from "./Authentication/Otp";
@@ -25,6 +26,7 @@ import ForgotPassword from "./Authentication/ForgotPassword";
 
 export {
   OnBoarding,
+  AuthLayout,
   SignIn,
   SignUp,
   Otp,

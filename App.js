@@ -13,6 +13,15 @@ const Stack = createStackNavigator();
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
+import {
+  OnBoarding,
+
+  SignIn,
+  SignUp,
+  ForgotPassword,
+  Otp
+} from './screens'
+
 const App = () => {
   return (
     <Provider store={store}>
@@ -21,9 +30,16 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}
-          initialRouteName={"Onboarding"}
+          initialRouteName={"OnBoarding"}
         >
-          <Stack.Screen name="Onboarding" component={CustomDrawer} />
+          <Stack.Screen name="OnBoarding" component={OnBoarding} />
+          <Stack.Screen name="SignIn" component={SignIn} />
+
+          <Stack.Screen name="SignUp" component={SignUp} />
+
+          <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+
+          <Stack.Screen name="Otp" component={Otp} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
